@@ -25,7 +25,7 @@
 
 <body>
   <span id="the_text">
-  How about some
+  How about some<br/>
   <script>
     document.write(pick(options));
   </script>?
@@ -37,6 +37,7 @@
       families: [the_font]
     }
   });
+  console.log(the_font);
   document.getElementById("the_text").style.fontFamily = the_font;
   </script>
 </body>

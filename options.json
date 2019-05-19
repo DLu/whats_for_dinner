@@ -1,5 +1,19 @@
 var options = [
   'lasagna',
-  'turkey chili'
+  'turkey chili',
+  'General Tso\'s Tofu',
+  'corn chowder',
+  'meatloaf',
+  'sesame tofu',
 ];
-var fonts = ['Droid Sans', 'Baloo Bhai'];
+var fonts = [
+    'Droid Sans',
+    'Baloo Bhai',
+    'Stylish',
+    'Kodchasan',
+    'Anton',
+    'Indie Flower',
+    'Permanent Marker',
+    'Amatic SC',
+    'Caveat'
+];
