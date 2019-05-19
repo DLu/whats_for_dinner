@@ -2,3 +2,4 @@ var options = [
   'lasagna',
   'turkey chili'
 ];
+var fonts = ['Droid Sans', 'Baloo Bhai'];

@@ -1,8 +1,43 @@
+<!doctype html>
+
+<html lang="en">
 <head>
-<script type="text/javascript" src="options.json"></script>
+  <meta charset="utf-8">
+  <title>What's for Dinner?</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script type="text/javascript" src="options.json"></script>
+  <script type="text/javascript">
+  function pick(values)
+  {
+    return values[Math.floor(Math.random() * values.length)];
+  }
+  </script>
+  <style>
+  #the_text {
+    font-size: 144px;
+    font-weight: 700;
+  }
+  body {
+    text-align: center;
+  }
+  </style>
 </head>
 
-How about some
-<script>
-    document.write(options[0]);
-</script>?
+<body>
+  <span id="the_text">
+  How about some
+  <script>
+    document.write(pick(options));
+  </script>?
+  </span>
+  <script>
+    var the_font = pick(fonts);
+    WebFont.load({
+    google: {
+      families: [the_font]
+    }
+  });
+  document.getElementById("the_text").style.fontFamily = the_font;
+  </script>
+</body>
+</html>
