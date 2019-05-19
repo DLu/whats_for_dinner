@@ -1,4 +1,4 @@
-[
+var options = [
   'lasagna',
   'turkey chili'
-]
+];
